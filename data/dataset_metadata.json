@@ -1,0 +1,35 @@
+{
+  "app_name": "Headspace - Meditation & Sleep",
+  "app_id": "com.getsomeheadspace.android",
+  "store": "Google Play Store",
+  "store_url": "https://play.google.com/store/apps/details?id=com.getsomeheadspace.android&hl=en_CA",
+  "collection_date": "2026-04-07T00:43:38",
+  "collection_method": "google-play-scraper Python library",
+  "language": "en",
+  "country": "ca",
+  "sort_order": "NEWEST",
+  "total_reviews_collected": 5000,
+  "target_reviews": 5000,
+  "notes": "Collected using google-play-scraper. Reviews are in English from the Canadian store. If fewer than target were collected, it means fewer reviews are available.",
+  "cleaning_decisions": {
+    "removed_duplicates": true,
+    "removed_empty_reviews": true,
+    "removed_short_reviews": true,
+    "min_review_length_chars": 10,
+    "lowercased": true,
+    "removed_punctuation": true,
+    "removed_special_characters": true,
+    "removed_emojis": true,
+    "converted_numbers_to_text": true,
+    "removed_stopwords": true,
+    "lemmatized": true
+  },
+  "cleaned_dataset_size": 4515,
+  "cleaning_stats": {
+    "total_raw": 5000,
+    "removed_empty": 0,
+    "removed_short": 470,
+    "removed_duplicate": 15,
+    "kept": 4515
+  }
+}
