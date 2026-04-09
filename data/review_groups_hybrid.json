@@ -1,13 +1,148 @@
-{  "groups": [
+{
+  "groups": [
     {
       "group_id": "H1",
-      "theme": "Workout logging failures during activity tracking",
-      "review_ids": ["rev_12", "rev_33", "rev_41", "rev_92"],
-      "example_reviews": [
-        "The app crashes whenever I try to log a run.",
-        "Logging workouts causes the app to freeze."
+      "theme": "Payment and Accessibility",
+      "review_ids": [
+        "R00143",
+        "R04262",
+        "R03876",
+        "R04238",
+        "R00114",
+        "R01245",
+        "R04299",
+        "R03762",
+        "R00193",
+        "R04002",
+        "R04293",
+        "R02422",
+        "R04937",
+        "R03666",
+        "R01643",
+        "R01474",
+        "R03905",
+        "R04772",
+        "R00570",
+        "R02592",
+        "R04972"
       ],
-      "notes": "Removed one unrelated review about login problems from the original automated group."
+      "example_reviews": [
+        "crazy long on boarding flow, only to find simple features paywalled. straight garbage.",
+        "So much is locked behind a pay wall"
+      ],
+      "notes": "Auto-regenerated from the latest cleaned dataset; refine manually if needed."
+    },
+    {
+      "group_id": "H2",
+      "theme": "App Performance and Stability",
+      "review_ids": [
+        "R02827",
+        "R00700",
+        "R03875",
+        "R01294",
+        "R01626",
+        "R01097",
+        "R01096",
+        "R02673",
+        "R00340",
+        "R01174",
+        "R00949",
+        "R00529",
+        "R00681",
+        "R01176",
+        "R04318",
+        "R00868",
+        "R00451",
+        "R02341",
+        "R01132",
+        "R01964",
+        "R01108"
+      ],
+      "example_reviews": [
+        "This app is frustrating to use, which is exactly what you don't want from a meditation app. The UI is a cluttered mess. It crashes regularly and basic",
+        "Dec 5th 2025 update has messed up the app even worse. If you're in a sleep cast, it will stop and tell you you're offline even if you're connected to "
+      ],
+      "notes": "Auto-regenerated from the latest cleaned dataset; refine manually if needed."
+    },
+    {
+      "group_id": "H3",
+      "theme": "Content and Features",
+      "review_ids": [
+        "R04256",
+        "R02911",
+        "R04585",
+        "R04502",
+        "R03278",
+        "R03232",
+        "R03432",
+        "R04340",
+        "R03266",
+        "R02731",
+        "R01896",
+        "R03251",
+        "R00518",
+        "R02136",
+        "R03481",
+        "R03058",
+        "R01474",
+        "R04400",
+        "R01933"
+      ],
+      "example_reviews": [
+        "This app has been super helpful in keeping consistent with my meditation practice. I also like that a lot of the videos have multiple length options.",
+        "Fantastic app for mental health. I love it, is has a variety of techniques that help you work on yourself and achieve peace, balance and a better outl"
+      ],
+      "notes": "Auto-regenerated from the latest cleaned dataset; refine manually if needed."
+    },
+    {
+      "group_id": "H4",
+      "theme": "User Experience and Feedback",
+      "review_ids": [
+        "R00041",
+        "R01348",
+        "R04275",
+        "R03198",
+        "R04022",
+        "R02408",
+        "R02818",
+        "R00962",
+        "R01140",
+        "R01927",
+        "R00893",
+        "R04575",
+        "R02209",
+        "R01451"
+      ],
+      "example_reviews": [
+        "Good app, but please please make a setting to turn off the haptic feedback when I press on buttons. I really don't like the sensation when I'm trying ",
+        "seems neat, but I was just here for the Flutter demo . nice work overall. although, I think there are some \"safe area\" issues near the bottom of the "
+      ],
+      "notes": "Auto-regenerated from the latest cleaned dataset; refine manually if needed."
+    },
+    {
+      "group_id": "H5",
+      "theme": "Overall Satisfaction and Recommendation",
+      "review_ids": [
+        "R00241",
+        "R01880",
+        "R03329",
+        "R00259",
+        "R02773",
+        "R04964",
+        "R03523",
+        "R01827",
+        "R01188",
+        "R01251",
+        "R01607",
+        "R03608",
+        "R02894",
+        "R04507"
+      ],
+      "example_reviews": [
+        "Just completed my 1000th meditation on Headspace. I love it. It's changed my life in so many ways.",
+        "amazing app, changed my perspective entirely."
+      ],
+      "notes": "Auto-regenerated from the latest cleaned dataset; refine manually if needed."
     }
   ]
 }
