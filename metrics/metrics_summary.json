@@ -1,35 +1,44 @@
 {
   "manual": {
-    "dataset_size": 300,
-    "persona_count": 4,
-    "requirements_count": 8,
-    "tests_count": 10,
-    "traceability_links": 12,
-    "review_coverage": 0.63,
-    "traceability_ratio": 0.87,
-    "testability_rate": 0.75,
-    "ambiguity_ratio": 0.12
+    "app_id": "com.getsomeheadspace.android",
+    "raw_count": 5000,
+    "clean_count": 4515,
+    "dataset_size": 4515,
+    "persona_count": 5,
+    "requirements_count": 20,
+    "tests_count": 24,
+    "traceability_links": 80,
+    "review_coverage": 0.0111,
+    "traceability_ratio": 1.0,
+    "testability_rate": 0.0,
+    "ambiguity_ratio": 0.0
   },
-  "automated": {
-    "dataset_size": 300,
-    "persona_count": 4,
-    "requirements_count": 8,
-    "tests_count": 10,
-    "traceability_links": 12,
-    "review_coverage": 0.65,
-    "traceability_ratio": 0.88,
-    "testability_rate": 0.80, 
-    "ambiguity_ratio": 0.12
+  "auto": {
+    "app_id": "com.getsomeheadspace.android",
+    "raw_count": 5000,
+    "clean_count": 4515,
+    "dataset_size": 4515,
+    "persona_count": 5,
+    "requirements_count": 28,
+    "tests_count": 6,
+    "traceability_links": 118,
+    "review_coverage": 0.0195,
+    "traceability_ratio": 1.0,
+    "testability_rate": 0.2143,
+    "ambiguity_ratio": 0.0238
   },
   "hybrid": {
-    "dataset_size": 300,
-    "persona_count": 4,
-    "requirements_count": 8,
-    "tests_count": 9,
-    "traceability_links": 12,
-    "review_coverage": 0.67,
-    "traceability_ratio": 0.88,
-    "testability_rate": 0.87, 
-    "ambiguity_ratio": 0.12
+    "app_id": "com.getsomeheadspace.android",
+    "raw_count": 5000,
+    "clean_count": 4515,
+    "dataset_size": 4515,
+    "persona_count": 5,
+    "requirements_count": 28,
+    "tests_count": 4,
+    "traceability_links": 116,
+    "review_coverage": 0.0195,
+    "traceability_ratio": 1.0,
+    "testability_rate": 0.1429,
+    "ambiguity_ratio": 0.0238
   }
 }
