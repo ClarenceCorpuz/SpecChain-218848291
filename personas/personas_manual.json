@@ -1,22 +1,129 @@
-{  "personas": [
+{
+  "personas": [
     {
-      "id": "P1",
-      "name": "Frequent Activity Tracker",
-      "description": "A user who relies on the app to log workouts frequently and expects stable performance.",
-      "derived_from_group": "G1",
+      "persona_id": "P1",
+      "name": "Alex the Active User",
+      "source_group": "G1",
+      "demographics": {
+        "age_range": "25-35",
+        "occupation": "Office worker / fitness enthusiast",
+        "tech_comfort": "Moderate",
+        "device": "Android smartphone"
+      },
       "goals": [
-        "Track workouts consistently",
-        "Log activity quickly"      ],
+        "Log workouts reliably without interruption",
+        "Maintain a consistent exercise streak"
+      ],
       "pain_points": [
-        "App crashes during logging",
-        "Workout data sometimes disappears"      ],
-      "context": [
-        "Logging activities immediately after workouts",
-        "Using the app during outdoor exercise"      ],
-      "constraints": [
-        "Logging must be reliable",
-        "Data should not be lost"       ],
-      "evidence_reviews": [
-        "rev_12",
-        "rev_45"      ]
-    }  ] }
+        "App crashes frequently during workout logging",
+        "Loses progress when the app freezes mid-session"
+      ],
+      "context": "Uses the app daily during gym sessions; depends on stability.",
+      "review_count": 10,
+      "sample_reviews": [
+        "The app crashes every time I try to log my workout.",
+        "App freezes and I lose all my progress."
+      ]
+    },
+    {
+      "persona_id": "P2",
+      "name": "Sam the Syncer",
+      "source_group": "G2",
+      "demographics": {
+        "age_range": "30-45",
+        "occupation": "Remote worker / multi-device user",
+        "tech_comfort": "High",
+        "device": "Multiple devices (phone + tablet + watch)"
+      },
+      "goals": [
+        "Keep workout data synchronized across all devices",
+        "Never lose historical workout data"
+      ],
+      "pain_points": [
+        "Sync fails between devices leading to data loss",
+        "Cloud backup is unreliable or incomplete"
+      ],
+      "context": "Uses the app across phone, tablet, and smartwatch.",
+      "review_count": 10,
+      "sample_reviews": [
+        "My workouts do not sync to my other devices.",
+        "Data keeps disappearing after syncing with the cloud."
+      ]
+    },
+    {
+      "persona_id": "P3",
+      "name": "Riley the Runner",
+      "source_group": "G3",
+      "demographics": {
+        "age_range": "20-40",
+        "occupation": "Student / amateur runner",
+        "tech_comfort": "Moderate",
+        "device": "Android phone with GPS"
+      },
+      "goals": [
+        "Get accurate GPS tracking for outdoor runs",
+        "Review precise route maps after each session"
+      ],
+      "pain_points": [
+        "GPS tracking is wildly inaccurate",
+        "Route maps do not match actual paths taken"
+      ],
+      "context": "Runs outdoors 3-5 times per week; relies on GPS accuracy.",
+      "review_count": 10,
+      "sample_reviews": [
+        "GPS tracking is completely inaccurate during my runs.",
+        "The route map never matches where I actually ran."
+      ]
+    },
+    {
+      "persona_id": "P4",
+      "name": "Jordan the Social User",
+      "source_group": "G4",
+      "demographics": {
+        "age_range": "18-30",
+        "occupation": "College student / social media user",
+        "tech_comfort": "High",
+        "device": "Android smartphone"
+      },
+      "goals": [
+        "Share workouts and achievements with friends",
+        "Compete on leaderboards and challenges"
+      ],
+      "pain_points": [
+        "Sharing features are difficult to use or broken",
+        "Leaderboards do not update or display correctly"
+      ],
+      "context": "Motivated by social competition and community engagement.",
+      "review_count": 10,
+      "sample_reviews": [
+        "I wish I could share my workouts with friends more easily.",
+        "The leaderboard feature is broken and never updates."
+      ]
+    },
+    {
+      "persona_id": "P5",
+      "name": "Taylor the Budget-Conscious User",
+      "source_group": "G5",
+      "demographics": {
+        "age_range": "25-50",
+        "occupation": "Varied / cost-sensitive consumer",
+        "tech_comfort": "Low to Moderate",
+        "device": "Budget Android phone"
+      },
+      "goals": [
+        "Access essential features without a premium subscription",
+        "Get clear information about what premium offers"
+      ],
+      "pain_points": [
+        "Subscription is too expensive for the value provided",
+        "Unexpected charges after cancellation"
+      ],
+      "context": "Evaluating whether premium features justify the cost.",
+      "review_count": 10,
+      "sample_reviews": [
+        "The premium subscription is too expensive for what it offers.",
+        "I was charged after cancelling my subscription."
+      ]
+    }
+  ]
+}
