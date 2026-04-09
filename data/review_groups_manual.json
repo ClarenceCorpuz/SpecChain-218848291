@@ -2,11 +2,103 @@
   "groups": [
     {
       "group_id": "G1",
-      "theme": "App crashes during activity logging, THIS IS A AN EXAMPLE, PLEASE REMOVE ",
-      "review_ids": ["rev_12", "rev_33", "rev_45", "rev_89"],
+      "theme": "App Stability and Crash Issues",
+      "review_ids": [
+        "R00000",
+        "R00001",
+        "R00003",
+        "R00004",
+        "R00005",
+        "R00006",
+        "R00007",
+        "R00009",
+        "R00010",
+        "R00011"
+      ],
       "example_reviews": [
-        "The app crashes every time I log my run.",
-        "Logging workouts causes the app to freeze."
+        "The app crashes every time I try to log my workout.",
+        "App freezes and I lose all my progress."
+      ]
+    },
+    {
+      "group_id": "G2",
+      "theme": "Sync and Data Loss Problems",
+      "review_ids": [
+        "R00012",
+        "R00013",
+        "R00014",
+        "R00015",
+        "R00016",
+        "R00017",
+        "R00018",
+        "R00019",
+        "R00020",
+        "R00022"
+      ],
+      "example_reviews": [
+        "My workouts do not sync to my other devices.",
+        "Data keeps disappearing after syncing with the cloud."
+      ]
+    },
+    {
+      "group_id": "G3",
+      "theme": "GPS and Route Tracking Accuracy",
+      "review_ids": [
+        "R00023",
+        "R00024",
+        "R00025",
+        "R00026",
+        "R00027",
+        "R00028",
+        "R00029",
+        "R00030",
+        "R00031",
+        "R00032"
+      ],
+      "example_reviews": [
+        "GPS tracking is completely inaccurate during my runs.",
+        "The route map never matches where I actually ran."
+      ]
+    },
+    {
+      "group_id": "G4",
+      "theme": "Social Features and Community Engagement",
+      "review_ids": [
+        "R00034",
+        "R00035",
+        "R00036",
+        "R00037",
+        "R00038",
+        "R00039",
+        "R00040",
+        "R00041",
+        "R00043",
+        "R00044"
+      ],
+      "example_reviews": [
+        "I wish I could share my workouts with friends more easily.",
+        "The leaderboard feature is broken and never updates."
+      ]
+    },
+    {
+      "group_id": "G5",
+      "theme": "Subscription, Pricing and Premium Features",
+      "review_ids": [
+        "R00045",
+        "R00046",
+        "R00047",
+        "R00048",
+        "R00049",
+        "R00050",
+        "R00051",
+        "R00052",
+        "R00053",
+        "R00054"
+      ],
+      "example_reviews": [
+        "The premium subscription is too expensive for what it offers.",
+        "I was charged after cancelling my subscription."
       ]
     }
-  ]}
+  ]
+}
