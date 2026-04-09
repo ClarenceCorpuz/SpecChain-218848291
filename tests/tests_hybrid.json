@@ -1,16 +1,52 @@
 {
   "tests": [
     {
-      "test_id": "T_hybrid_1",
-      "requirement_id": "FR_hybrid_1",
-      "scenario": "Save a workout entry without crashing",
+      "test_id": "T_quick_log",
+      "requirement_id": "REQ-001",
+      "scenario": "Quickly logging a meditation workout",
       "steps": [
-        "Open the workout logging feature",
-        "Enter workout information",
-        "Submit the workout"
+        "Launch the Headspace app and navigate to the meditation log screen",
+        "Complete a short meditation session (e.g., 5 minutes)",
+        "Tap the 'Log' button to save the workout without entering detailed information"
       ],
-      "expected_result": "The workout is saved successfully and the application does not crash.",
-      "notes": "Revised the expected result to match the updated hybrid requirement."
+      "expected_result": "The meditation session is logged within 5 seconds of tapping the 'Log' button with a timestamp and duration",
+      "notes": "This test was written to validate the 'quick log' functionality for frequent fitness loggers who value efficiency"
+    },
+    {
+      "test_id": "T_hybrid_2",
+      "requirement_id": "REQ-002",
+      "scenario": "Track meditation session without interruption",
+      "steps": [
+        "Launch the Headspace app and navigate to the meditation session screen",
+        "Start a meditation session and allow it to run for 5 minutes",
+        "Simulate a phone call notification while the meditation session is in progress"
+      ],
+      "expected_result": "The meditation session continues uninterrupted and the timer keeps running",
+      "notes": "This test was written to validate the requirement from the perspective of a Frequent Fitness Logger who values uninterrupted tracking of their activities."
+    },
+    {
+      "test_id": "T_hybrid_3",
+      "requirement_id": "REQ-003",
+      "scenario": "App Crash on Saving Workout",
+      "steps": [
+        "Launch the Headspace app and navigate to the meditation log section",
+        "Complete a meditation session and attempt to save it",
+        "Simulate a network interruption or force-close the app during the save process"
+      ],
+      "expected_result": "The app does not crash and the meditation session is saved successfully when the network interruption is resolved or the app is relaunched",
+      "notes": "This test was written to simulate a real-world scenario where a user may experience network issues or accidentally force-close the app while saving a workout, as per the Frequent Fitness Logger persona."
+    },
+    {
+      "test_id": "T_hybrid_4",
+      "requirement_id": "REQ-004",
+      "scenario": "Activity data loss on app restart",
+      "steps": [
+        "Launch the Headspace app and log in to an existing account",
+        "Enter and save activity data for a meditation session",
+        "Restart the app and verify if the previously entered activity data is still present"
+      ],
+      "expected_result": "The previously entered activity data is retained and displayed upon app restart",
+      "notes": "This test was written to address the concern of data loss for Frequent Fitness Loggers who rely on tracking their activity"
     }
   ]
 }
