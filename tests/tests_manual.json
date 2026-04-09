@@ -1,16 +1,281 @@
-
 {
   "tests": [
     {
-      "test_id": "T_auto_1",
+      "test_id": "T_manual_1",
       "requirement_id": "FR1",
-      "scenario": "Workout Logging Stability",
+      "scenario": "Successful Workout Logging Without Crash",
       "steps": [
         "Open the workout logging screen",
-        "Enter workout details",
-        "Submit the workout"
+        "Enter valid workout details (type, duration, distance)",
+        "Press the Submit button"
       ],
-      "expected_result": "The workout is saved successfully and the application remains stable."
+      "expected_result": "The workout is saved successfully, a confirmation message is displayed, and the application remains fully operational."
+    },
+    {
+      "test_id": "T_manual_2",
+      "requirement_id": "FR1",
+      "scenario": "Logging Workout Under Low Memory Conditions",
+      "steps": [
+        "Simulate a low device memory environment",
+        "Open the workout logging screen",
+        "Enter workout details and press Submit"
+      ],
+      "expected_result": "The application does not crash under low memory conditions and the workout is saved successfully."
+    },
+    {
+      "test_id": "T_manual_3",
+      "requirement_id": "FR2",
+      "scenario": "Data Restoration After Crash Mid-Entry",
+      "steps": [
+        "Open the workout logging screen",
+        "Enter partial workout details",
+        "Simulate an application crash",
+        "Relaunch the application"
+      ],
+      "expected_result": "The application restores the partially entered workout data and prompts the user to review and save it."
+    },
+    {
+      "test_id": "T_manual_4",
+      "requirement_id": "FR2",
+      "scenario": "Data Restoration After Crash on Submission",
+      "steps": [
+        "Open the workout logging screen",
+        "Enter complete workout details",
+        "Simulate a crash at the exact moment of submission",
+        "Relaunch the application"
+      ],
+      "expected_result": "All workout data is fully restored and the user is prompted to confirm before the entry is permanently saved."
+    },
+    {
+      "test_id": "T_manual_5",
+      "requirement_id": "FR3",
+      "scenario": "Workout Syncs to Second Device Within 60 Seconds",
+      "steps": [
+        "Log a workout on Device A while connected to Wi-Fi",
+        "Ensure Device B is linked to the same user account",
+        "Enable network connection on Device B",
+        "Wait up to 60 seconds and check workout history on Device B"
+      ],
+      "expected_result": "The workout logged on Device A appears on Device B within 60 seconds with no duplication or data loss."
+    },
+    {
+      "test_id": "T_manual_6",
+      "requirement_id": "FR3",
+      "scenario": "No Duplicate Entries After Multiple Sync Attempts",
+      "steps": [
+        "Log a workout on Device A",
+        "Trigger a manual sync three times in succession on Device B",
+        "Review the workout history on Device B"
+      ],
+      "expected_result": "Only one instance of the workout appears in the history on Device B with no duplicate entries created."
+    },
+    {
+      "test_id": "T_manual_7",
+      "requirement_id": "FR4",
+      "scenario": "Sync Failure Notification on Network Error",
+      "steps": [
+        "Log a workout on the device",
+        "Disable the network connection to simulate failure",
+        "Trigger a sync operation",
+        "Observe the notification displayed"
+      ],
+      "expected_result": "A descriptive error notification appears within 5 seconds citing the network failure reason and showing a Retry Sync button."
+    },
+    {
+      "test_id": "T_manual_8",
+      "requirement_id": "FR4",
+      "scenario": "Retry Sync Button Restores Data After Network Recovery",
+      "steps": [
+        "Trigger a sync failure by disabling the network",
+        "Observe the error notification with Retry Sync button",
+        "Re-enable the network connection",
+        "Press the Retry Sync button"
+      ],
+      "expected_result": "The sync completes successfully after pressing Retry Sync and the workout data appears on all linked devices."
+    },
+    {
+      "test_id": "T_manual_9",
+      "requirement_id": "FR5",
+      "scenario": "GPS Signal Acquired Within 30 Seconds Outdoors",
+      "steps": [
+        "Stand outdoors with clear sky visibility",
+        "Open the app and navigate to the outdoor activity screen",
+        "Press the Start Activity button",
+        "Measure the time until a GPS confirmation indicator appears"
+      ],
+      "expected_result": "A GPS signal is acquired and the confirmation indicator is displayed within 30 seconds of pressing Start Activity."
+    },
+    {
+      "test_id": "T_manual_10",
+      "requirement_id": "FR5",
+      "scenario": "GPS Acquisition Warning When Signal Unavailable",
+      "steps": [
+        "Open the app in an area with no GPS signal (e.g. indoors)",
+        "Navigate to the outdoor activity screen",
+        "Press the Start Activity button",
+        "Wait 30 seconds and observe application behaviour"
+      ],
+      "expected_result": "If GPS signal cannot be acquired within 30 seconds, the application displays a clear warning message and does not begin recording inaccurate route data."
+    },
+    {
+      "test_id": "T_manual_11",
+      "requirement_id": "FR6",
+      "scenario": "GPS Distance Accuracy Within 2% on Known Route",
+      "steps": [
+        "Run a pre-measured route of exactly 5.00 km",
+        "Enable GPS tracking before starting the run",
+        "Complete the route and stop the activity",
+        "Compare the app-recorded distance to 5.00 km"
+      ],
+      "expected_result": "The app-recorded distance is between 4.90 km and 5.10 km, confirming accuracy within the 2% tolerance threshold."
+    },
+    {
+      "test_id": "T_manual_12",
+      "requirement_id": "FR6",
+      "scenario": "GPS Distance Accuracy in Dense Urban Environment",
+      "steps": [
+        "Run a pre-measured urban route of 3.00 km",
+        "Enable GPS tracking and complete the route",
+        "Compare app-recorded distance to 3.00 km"
+      ],
+      "expected_result": "The app-recorded distance is between 2.94 km and 3.06 km even under urban GPS interference conditions."
+    },
+    {
+      "test_id": "T_manual_13",
+      "requirement_id": "FR7",
+      "scenario": "Workout Shared to Community Feed in Under 10 Seconds",
+      "steps": [
+        "Complete and save a workout",
+        "Navigate to the workout summary screen",
+        "Select Share Workout and choose the in-app community feed",
+        "Measure the time taken for the post to appear"
+      ],
+      "expected_result": "The workout summary is posted to the community feed within 10 seconds and a confirmation notification is shown."
+    },
+    {
+      "test_id": "T_manual_14",
+      "requirement_id": "FR7",
+      "scenario": "Workout Sharing Fails Gracefully Without Network",
+      "steps": [
+        "Complete and save a workout",
+        "Disable the network connection",
+        "Attempt to share the workout to the community feed"
+      ],
+      "expected_result": "The system displays an error message indicating the share failed due to no network, and offers a retry option without posting duplicate content."
+    },
+    {
+      "test_id": "T_manual_15",
+      "requirement_id": "FR8",
+      "scenario": "Leaderboard Refreshes Automatically After 5 Minutes",
+      "steps": [
+        "Open the community leaderboard screen",
+        "Record the current rankings and timestamp",
+        "Wait 5 minutes without manual interaction",
+        "Observe the leaderboard for an automatic update"
+      ],
+      "expected_result": "The leaderboard updates automatically within 5 minutes and displays an updated last-refreshed timestamp."
+    },
+    {
+      "test_id": "T_manual_16",
+      "requirement_id": "FR8",
+      "scenario": "Leaderboard Timestamp Reflects Correct Refresh Time",
+      "steps": [
+        "Open the community leaderboard screen",
+        "Note the displayed last-refreshed timestamp",
+        "Wait for an automatic refresh to occur",
+        "Verify the new timestamp matches the actual refresh time"
+      ],
+      "expected_result": "The displayed last-refreshed timestamp updates accurately to reflect the exact time of the most recent data refresh."
+    },
+    {
+      "test_id": "T_manual_17",
+      "requirement_id": "FR9",
+      "scenario": "Itemised Billing Screen Shown Before Subscription Payment",
+      "steps": [
+        "Navigate to the subscription selection screen",
+        "Select a subscription tier",
+        "Proceed to the payment confirmation step",
+        "Inspect the confirmation screen content"
+      ],
+      "expected_result": "The confirmation screen displays the plan name, billing cycle, total charge amount, and next renewal date before any payment is processed."
+    },
+    {
+      "test_id": "T_manual_18",
+      "requirement_id": "FR9",
+      "scenario": "Payment Not Processed Without Explicit User Confirmation",
+      "steps": [
+        "Navigate to the subscription payment confirmation screen",
+        "Close the screen without confirming",
+        "Check the user's billing history"
+      ],
+      "expected_result": "No charge is applied to the user's payment method when the confirmation screen is dismissed without explicit approval."
+    },
+    {
+      "test_id": "T_manual_19",
+      "requirement_id": "FR10",
+      "scenario": "Subscription Cancelled Immediately on User Request",
+      "steps": [
+        "Navigate to the subscription management screen",
+        "Select Cancel Subscription and confirm the action",
+        "Check subscription status immediately after confirmation"
+      ],
+      "expected_result": "The subscription is terminated immediately upon confirmation, a cancellation notification is delivered within 60 seconds, and the subscription status shows as cancelled."
+    },
+    {
+      "test_id": "T_manual_20",
+      "requirement_id": "FR10",
+      "scenario": "No Further Charges After Subscription Cancellation",
+      "steps": [
+        "Cancel an active subscription",
+        "Wait for the next scheduled billing date to pass",
+        "Check the user's billing history for new charges"
+      ],
+      "expected_result": "No new charges appear on the user's billing history after the subscription cancellation date."
+    },
+    {
+      "test_id": "T_manual_21",
+      "requirement_id": "FR11",
+      "scenario": "All Subscription Tiers Displayed in Comparative Layout",
+      "steps": [
+        "Navigate to the subscription selection screen",
+        "Inspect the layout of the subscription options"
+      ],
+      "expected_result": "All available subscription tiers are displayed side-by-side with each tier listing its price, billing cycle, and an itemised list of included features on a single screen."
+    },
+    {
+      "test_id": "T_manual_22",
+      "requirement_id": "FR11",
+      "scenario": "Subscription Comparison Screen Accessible from Settings",
+      "steps": [
+        "Open the application settings menu",
+        "Navigate to the subscription management section",
+        "Select View Plans or equivalent option"
+      ],
+      "expected_result": "The subscription comparison screen loads successfully and displays all tiers with accurate pricing and feature details."
+    },
+    {
+      "test_id": "T_manual_23",
+      "requirement_id": "FR12",
+      "scenario": "User Successfully Creates a Group Fitness Challenge",
+      "steps": [
+        "Navigate to the challenges section",
+        "Select Create Challenge",
+        "Enter challenge parameters: name, duration, activity type, and maximum participant limit",
+        "Submit the challenge creation form"
+      ],
+      "expected_result": "The challenge is created without errors and appears in the user's active challenges list within 10 seconds."
+    },
+    {
+      "test_id": "T_manual_24",
+      "requirement_id": "FR12",
+      "scenario": "User Successfully Joins an Existing Group Challenge",
+      "steps": [
+        "Navigate to the challenges section",
+        "Select Join Challenge",
+        "Browse the available challenges list",
+        "Select an open challenge and confirm joining"
+      ],
+      "expected_result": "The user is added to the selected challenge without errors and the challenge appears in the user's active challenges list within 10 seconds."
     }
   ]
 }
