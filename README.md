@@ -49,7 +49,7 @@ Cleaning stats:
 
 ---
 
-## Repository Structure (relevant to Task 8)
+## Repository Structure
 
 - data/
   - reviews_raw.jsonl
@@ -89,7 +89,7 @@ Cleaning stats:
 
 ---
 
-## How to Run (Exact Commands)
+## How to Run (Commands)
 
 Environment setup and full pipeline:
 
