@@ -1,0 +1,167 @@
+{
+  "personas": [
+    {
+      "id": "P_auto_1",
+      "name": "Frustrated Fiona",
+      "description": "Frustrated Fiona is a budget-conscious individual seeking accessible mental wellness resources. She values simplicity and ease of use in digital products. Her financial constraints make her wary of subscription-based services.",
+      "derived_from_group": "A1",
+      "goals": [
+        "Access free or affordable meditation and mental wellness resources",
+        "Find a simple and easy-to-use meditation app",
+        "Prioritize her mental health without incurring significant costs"
+      ],
+      "pain_points": [
+        "Locked features behind a paywall",
+        "Lengthy onboarding process",
+        "Lack of free content or trials that feel genuine"
+      ],
+      "context": [
+        "Seeking mental wellness resources at home",
+        "Exploring free or low-cost digital alternatives",
+        "Considering subscription services with caution"
+      ],
+      "constraints": [
+        "Limited disposable income",
+        "Skepticism towards subscription-based models",
+        "Frustration with restricted access to features"
+      ],
+      "evidence_reviews": [
+        "R00143",
+        "R04262",
+        "R03876"
+      ],
+      "persona_id": "P_auto_1",
+      "source_group": "A1"
+    },
+    {
+      "id": "P_auto_2",
+      "name": "Frustrated Follower Frank",
+      "description": "Frank is a regular user of meditation apps who values a seamless and stable experience to support his mindfulness practice. He has been using Headspace for some time but has grown increasingly frustrated with the app's recent performance issues. Frank seeks a reliable and efficient way to meditate and track his progress.",
+      "derived_from_group": "A2",
+      "goals": [
+        "Use Headspace to meditate and track progress",
+        "Experience a seamless and stable app performance",
+        "Easily access and listen to guided meditations"
+      ],
+      "pain_points": [
+        "Frequent app crashes and interruptions",
+        "Difficulty accessing and listening to meditations",
+        "Poor buffering and video session quality"
+      ],
+      "context": [
+        "At home, using a stable internet connection",
+        "On-the-go, using a mobile device with varying internet connectivity"
+      ],
+      "constraints": [
+        "Limited technical expertise to troubleshoot issues",
+        "Expectation of a stable and seamless experience from a premium app"
+      ],
+      "evidence_reviews": [
+        "R02827",
+        "R00700",
+        "R03875"
+      ],
+      "persona_id": "P_auto_2",
+      "source_group": "A2"
+    },
+    {
+      "id": "P_auto_3",
+      "name": "Mindful Maya",
+      "description": "Maya is a wellness-oriented individual seeking to establish a consistent meditation practice to improve her mental health and balance. She values variety in meditation techniques and appreciates features that support her goals. Maya is likely someone who prioritizes self-care and is interested in exploring different aspects of mindfulness.",
+      "derived_from_group": "A3",
+      "goals": [
+        "Establish a consistent meditation practice",
+        "Improve mental health and balance",
+        "Explore various meditation techniques"
+      ],
+      "pain_points": [
+        "Lack of guidance during meditation sessions",
+        "Limited free content"
+      ],
+      "context": [
+        "Using the app at home or in a quiet space for personal meditation practice",
+        "Occasionally using the app during work breaks for stress relief"
+      ],
+      "constraints": [
+        "May have limited time for meditation practice",
+        "May be hesitant to pay for premium content"
+      ],
+      "evidence_reviews": [
+        "R04256",
+        "R02911",
+        "R04585"
+      ],
+      "persona_id": "P_auto_3",
+      "source_group": "A3"
+    },
+    {
+      "id": "P_auto_4",
+      "name": "Mindful Maya",
+      "description": "Maya is a meditation enthusiast who values relaxation and mindfulness. She uses Headspace to manage stress and improve her mental well-being. Despite being a loyal user, she faces various issues with the app that hinder her experience.",
+      "derived_from_group": "A4",
+      "goals": [
+        "Find a peaceful and personalized meditation experience",
+        "Easily navigate the app and access relevant content",
+        "Use the app without frustrating technical issues"
+      ],
+      "pain_points": [
+        "Haptic feedback during button presses is annoying and disrupts relaxation",
+        "Confusing GUI and categorization issues make it hard to find what she's looking for",
+        "Frequent crashes and slow performance after sessions"
+      ],
+      "context": [
+        "Using the app during quiet moments at home",
+        "Trying to fit in meditation sessions during a busy schedule"
+      ],
+      "constraints": [
+        "Android device with limited storage",
+        "Older phone model with potential performance issues"
+      ],
+      "evidence_reviews": [
+        "R00041",
+        "R01348",
+        "R04275",
+        "R03198",
+        "R04022",
+        "R02408",
+        "R02818",
+        "R00962",
+        "R01140",
+        "R01927"
+      ],
+      "persona_id": "P_auto_4",
+      "source_group": "A4"
+    },
+    {
+      "id": "P_auto_5",
+      "name": "Mindful Maven Maya",
+      "description": "Maya is a highly satisfied meditation enthusiast who uses Headspace to cultivate mindfulness and calmness in her daily life. She values the app's guidance and flexibility, and has experienced significant positive impacts on her mental well-being. Maya is likely someone who prioritizes self-care and is committed to making meditation a consistent part of her routine.",
+      "derived_from_group": "A5",
+      "goals": [
+        "Achieve a consistent meditation practice",
+        "Reduce stress and anxiety",
+        "Improve mental clarity and focus"
+      ],
+      "pain_points": [
+        "Frustrating loading times",
+        "Limited casting options for audio"
+      ],
+      "context": [
+        "Using Headspace during breaks at work or home",
+        "Incorporating meditation into daily routine",
+        "Seeking guidance for mindfulness practices"
+      ],
+      "constraints": [
+        "Finding a quiet and peaceful space for meditation",
+        "Dealing with occasional technical issues"
+      ],
+      "evidence_reviews": [
+        "R00241",
+        "R01880",
+        "R03329"
+      ],
+      "persona_id": "P_auto_5",
+      "source_group": "A5"
+    }
+  ]
+}
