@@ -2,14 +2,71 @@
   "tests": [
     {
       "test_id": "T_auto_1",
-      "requirement_id": "FR_auto_1",
-      "scenario": "Logging a workout without crashing",
+      "requirement_id": "REQ-001",
+      "scenario": "Log Workout Successfully",
       "steps": [
-        "Open the workout logging screen",
-        "Enter workout details",
-        "Submit the workout"
+        "Launch the Headspace app and navigate to the 'Workouts' or 'Progress' section",
+        "Complete a meditation session",
+        "Verify that the session is automatically logged and displayed in the workout log"
       ],
-      "expected_result": "The workout is saved successfully and the application remains stable."
+      "expected_result": "The meditation session is logged with details including date, time, session name, and duration, and is displayed in the user's workout log"
+    },
+    {
+      "test_id": "T_auto_2",
+      "requirement_id": "REQ-002",
+      "scenario": "Meditation progress tracking with exercise",
+      "steps": [
+        "Launch Headspace app and log in with existing credentials",
+        "Complete a meditation session and track it",
+        "Log an exercise session (e.g., a run or workout) in the app",
+        "View progress dashboard to see meditation and exercise data displayed together"
+      ],
+      "expected_result": "The progress dashboard displays both meditation and exercise data, including metrics such as total meditation minutes, number of sessions, and exercise activities completed, with a clear visual representation of progress over time."
+    },
+    {
+      "test_id": "T_auto_3",
+      "requirement_id": "REQ-003",
+      "scenario": "Seamless Integration of Fitness and Mindfulness Goals",
+      "steps": [
+        "Launch the Headspace app and log in with Mindful Athlete Maya's credentials",
+        "Navigate to the 'Goals' section and set a new fitness goal (e.g., 'Run 3 times a week')",
+        "Set a new mindfulness goal (e.g., 'Meditate for 10 minutes daily') and observe the app's integration of both goals"
+      ],
+      "expected_result": "The app displays a unified view of both fitness and mindfulness goals, allowing Maya to track progress and receive personalized recommendations for achieving her goals"
+    },
+    {
+      "test_id": "T_auto_4",
+      "requirement_id": "REQ-004",
+      "scenario": "Successful Workout Logging",
+      "steps": [
+        "Launch the Headspace app and log in with valid credentials",
+        "Complete a meditation session",
+        "Attempt to log the completed session as a workout"
+      ],
+      "expected_result": "The system logs the workout successfully and displays a confirmation message to the user"
+    },
+    {
+      "test_id": "T_auto_5",
+      "requirement_id": "REQ-005",
+      "scenario": "Verify Consistent Tracking of Meditation and Exercise Progress",
+      "steps": [
+        "Launch the Headspace app and log in with Maya's credentials",
+        "Complete a 10-minute meditation session and track it",
+        "Complete a 30-minute exercise session (e.g., yoga) and track it",
+        "Log out and log back in to verify progress is retained"
+      ],
+      "expected_result": "The app accurately displays Maya's meditation and exercise progress, including duration and completion status, without any discrepancies"
+    },
+    {
+      "test_id": "T_auto_6",
+      "requirement_id": "REQ-006",
+      "scenario": "Seamless Mindfulness and Fitness Integration",
+      "steps": [
+        "Launch the Headspace app and log in with a valid account",
+        "Navigate to the 'Workouts' section and select a meditation and fitness combined session",
+        "Complete the selected session, which includes both meditation and a fitness activity"
+      ],
+      "expected_result": "The app provides a cohesive and uninterrupted experience, allowing Mindful Athlete Maya to transition smoothly between meditation and fitness activities without needing to exit or manually switch between separate apps or sections."
     }
   ]
 }
